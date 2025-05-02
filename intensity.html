@@ -7,6 +7,7 @@
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
+      line-height: 1.6;
     }
     h1, h2, h3 {
       text-align: center;
@@ -14,7 +15,7 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 40px;
+      margin-top: 40px;
     }
     th, td {
       border: 1px solid #ddd;
@@ -28,13 +29,34 @@
     audio {
       width: 150px;
     }
+    ul {
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
 
-  <h2>Emotion Intensity Rating</h2>
-  <p>You are asked to listen to each audio clip and rate how strongly a specific emotion (e.g., Happy, Angry, Sad, or Surprised) is expressed in the speaker’s voice. Ratings are made on a 5-point scale, from 1 (very low intensity) to 5 (very high intensity).</p>
-  <p>The table below organizes sample clips by emotion category, speaker gender, and intensity level.</p>
+  <h2>Evaluation Task: Emotion Intensity Rating</h2>
+  <p>For this task, you will listen to a generated audio sample. You will also be given a specific emotion label (<strong>Happy, Angry, Sad, or Surprised</strong>). Your task is to very carefully listen to the audio and rate how intense or activated that given emotion feels in the speaker's voice on a scale of 1 to 5.</p>
+
+  <p><strong>Focus solely on the strength or perceived intensity</strong> of the specified emotion in the audio, regardless of whether other emotions might also be present or the speech content.</p>
+
+  <h3>Intensity / Activation Scale:</h3>
+  <ul>
+    <li><strong>1: Very Low Intensity / Not Noticeable</strong> – You hear little to no trace of the specified emotion in the voice.</li>
+    <li><strong>2: Low Intensity / Slightly Noticeable</strong> – You detect a slight hint or minimal presence of the specified emotion.</li>
+    <li><strong>3: Moderate Intensity / Clearly Noticeable</strong> – The specified emotion is clearly present and discernible in the voice, but not overwhelming.</li>
+    <li><strong>4: High Intensity / Strong</strong> – The specified emotion feels strong and quite prominent in the voice.</li>
+    <li><strong>5: Very High Intensity / Extremely Strong</strong> – The specified emotion feels extremely strong, highly activated, or highly expressive in the voice.</li>
+  </ul>
+
+  <h3>Instructions:</h3>
+  <ul>
+    <li>Note the emotion label provided for the audio sample.</li>
+    <li>Listen to the generated audio sample with maximum attention.</li>
+    <li>Based only on the audio, rate the intensity or activation level of the specified emotion using the 1–5 scale provided above.</li>
+    <li>Select the single score (1, 2, 3, 4, or 5) that best represents the intensity of the specified emotion as you perceive it in the audio.</li>
+  </ul>
 
   <table>
     <thead>
