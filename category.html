@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Emotion Category Identification</title>
   <style>
     body {
@@ -11,18 +11,102 @@
     h1, h2, h3 {
       text-align: center;
     }
-    p {
-      margin-bottom: 20px;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    audio {
+      width: 150px;
     }
   </style>
 </head>
 <body>
 
   <h2>Emotion Category Identification</h2>
-  <p>In this task, you listen to a speech sample and determine which single emotion is most clearly expressed. Options include: Angry, Sad, Happy, Surprised, Neutral, and Other. If "Other" is selected, annotators are asked to briefly describe the perceived emotion in their own words.</p>
-  <p>The sample clips are grouped by emotion labels to demonstrate how different emotions typically sound in speech.</p>
+  <p>This task asks you to listen to a speech sample and determine the most clearly expressed emotion. Options include: Angry, Sad, Happy, Surprised, Neutral, and Other. If "Other" is selected, you will be asked to briefly describe the perceived emotion.</p>
+  <p>The examples below are grouped by emotion and gender.</p>
 
-  <p style="text-align: center; font-style: italic;">(* No example table provided yet *)</p>
-
+  <table>
+    <thead>
+      <tr>
+        <th>Gender</th>
+        <th>Angry</th>
+        <th>Sad</th>
+        <th>Happy</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Female</td>
+        <td><audio controls src="audio/1052_IEO_ANG_HI.wav"></audio></td>
+        <td><audio controls src="audio/1028_WSI_FEA_XX.wav"></audio></td>
+        <td><audio controls src="audio/1003_IWW_HAP_XX.wav"></audio></td>
+      </tr>
+      <tr>
+        <td>Male</td>
+        <td><audio controls src="audio/1059_TSI_ANG_XX.wav"></audio></td>
+        <td><audio controls src="audio/1067_IEO_DIS_HI.wav"></audio></td>
+        <td><audio controls src="audio/1064_TSI_HAP_XX.wav"></audio></td>
+      </tr>
+      <tr>
+        <td>Female</td>
+        <td><audio controls src="audio/1061_IWL_ANG_XX.wav"></audio></td>
+        <td><audio controls src="audio/1028_ITS_SAD_XX.wav"></audio></td>
+        <td><audio controls src="audio/1074_TAI_HAP_XX.wav"></audio></td>
+      </tr>
+      <tr>
+        <td>Male</td>
+        <td><audio controls src="audio/1027_IOM_ANG_XX.wav"></audio></td>
+        <td><audio controls src="audio/1039_MTI_SAD_XX.wav"></audio></td>
+        <td><audio controls src="audio/1064_TIE_HAP_XX.wav"></audio></td>
+      </tr>
+      <tr>
+        <td>Female</td>
+        <td><audio controls src="audio/1058_DFA_ANG_XX.wav"></audio></td>
+        <td><audio controls src="audio/1060_IOM_SAD_XX.wav"></audio></td>
+        <td><audio controls src="audio/1078_IEO_HAP_MD.wav"></audio></td>
+      </tr>
+      <tr>
+        <td>Male</td>
+        <td><audio controls src="audio/1014_IEO_ANG_MD.wav"></audio></td>
+        <td><audio controls src="audio/1040_TIE_SAD_XX.wav"></audio></td>
+        <td><audio controls src="audio/1059_IEO_HAP_MD.wav"></audio></td>
+      </tr>
+      <tr>
+        <td>Female</td>
+        <td><audio controls src="audio/1012_TIE_ANG_XX.wav"></audio></td>
+        <td><audio controls src="audio/1020_TAI_SAD_XX.wav"></audio></td>
+        <td><audio controls src="audio/1079_ITS_HAP_XX.wav"></audio></td>
+      </tr>
+      <tr>
+        <td>Male</td>
+        <td><audio controls src="audio/1027_WSI_DIS_XX.wav"></audio></td>
+        <td><audio controls src="audio/1069_TIE_SAD_XX.wav"></audio></td>
+        <td><audio controls src="audio/1038_ITS_FEA_XX.wav"></audio></td>
+      </tr>
+      <tr>
+        <td>Female</td>
+        <td><audio controls src="audio/1055_WSI_ANG_XX.wav"></audio></td>
+        <td><audio controls src="audio/1006_IEO_SAD_MD.wav"></audio></td>
+        <td><audio controls src="audio/1063_IWL_HAP_XX.wav"></audio></td>
+      </tr>
+      <tr>
+        <td>Male</td>
+        <td><audio controls src="audio/1017_WSI_DIS_XX.wav"></audio></td>
+        <td><audio controls src="audio/1045_MTI_SAD_XX.wav"></audio></td>
+        <td><audio controls src="audio/1045_IWW_HAP_XX.wav"></audio></td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
