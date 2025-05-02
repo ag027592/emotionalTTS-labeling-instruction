@@ -2,184 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Emotion Intensity Annotation Training</title>
+  <title>Speech Emotion Annotation Demo</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
+      text-align: center;
     }
     h1 {
-      text-align: center;
+      margin-bottom: 30px;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 40px;
+    ul {
+      list-style-type: none;
+      padding: 0;
     }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: center;
-      vertical-align: middle;
+    li {
+      margin: 15px 0;
     }
-    th {
-      background-color: #f2f2f2;
+    a {
+      font-size: 20px;
+      text-decoration: none;
+      color: #007BFF;
     }
-    audio {
-      width: 150px;
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  
-  <h2>Demo Description: Emotion Annotation Tasks</h2>
-  <p>This demo presents examples to help annotators understand two types of labeling tasks related to emotional speech: <strong>Emotion Intensity Rating</strong> and <strong>Emotion Category Identification</strong>.</p>
 
-  <h3>1. Emotion Intensity Rating</h3>
-  <p>Annotators are asked to listen to each audio clip and rate how strongly a specific emotion (e.g., Happy, Angry, Sad, or Surprised) is expressed in the speaker’s voice. Ratings are made on a 5-point scale, from 1 (very low intensity) to 5 (very high intensity).</p>
-  <p>The table below organizes sample clips by emotion category, speaker gender, and intensity level to illustrate different levels of emotional activation.</p>
+  <h1>Welcome to the Speech Emotion Annotation Demo</h1>
+  <p>Select a task to get started:</p>
 
-  <h3>2. Emotion Category Identification</h3>
-  <p>In this task, annotators listen to a speech sample and determine which single emotion is most clearly expressed. Options include: Angry, Sad, Happy, Surprised, Neutral, and Other. If "Other" is selected, annotators are asked to briefly describe the perceived emotion in their own words.</p>
-  <p>The sample clips are grouped by emotion labels to demonstrate how different emotions typically sound in speech.</p>
+  <ul>
+    <li><a href="intensity.html">Emotion Intensity Rating</a></li>
+    <li><a href="category.html">Emotion Category Identification</a></li>
+    <li><a href="age.html">Speaker Age Group Annotation</a></li>
+  </ul>
 
-  <!-- 第一部分表格 -->
-  <table>
-    <thead>
-      <tr>
-        <th>Intensity Level</th>
-        <th>Gender</th>
-        <th>Angry</th>
-        <th>Sad</th>
-        <th>Happy</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>5</td>
-        <td>Female</td>
-        <td><audio controls src="audio/1052_IEO_ANG_HI.wav"></audio></td>
-        <td><audio controls src="audio/1028_WSI_FEA_XX.wav"></audio></td>
-        <td><audio controls src="audio/1003_IWW_HAP_XX.wav"></audio></td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Male</td>
-        <td><audio controls src="audio/1059_TSI_ANG_XX.wav"></audio></td>
-        <td><audio controls src="audio/1067_IEO_DIS_HI.wav"></audio></td>
-        <td><audio controls src="audio/1064_TSI_HAP_XX.wav"></audio></td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Female</td>
-        <td><audio controls src="audio/1061_IWL_ANG_XX.wav"></audio></td>
-        <td><audio controls src="audio/1028_ITS_SAD_XX.wav"></audio></td>
-        <td><audio controls src="audio/1074_TAI_HAP_XX.wav"></audio></td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Male</td>
-        <td><audio controls src="audio/1027_IOM_ANG_XX.wav"></audio></td>
-        <td><audio controls src="audio/1039_MTI_SAD_XX.wav"></audio></td>
-        <td><audio controls src="audio/1064_TIE_HAP_XX.wav"></audio></td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Female</td>
-        <td><audio controls src="audio/1058_DFA_ANG_XX.wav"></audio></td>
-        <td><audio controls src="audio/1060_IOM_SAD_XX.wav"></audio></td>
-        <td><audio controls src="audio/1078_IEO_HAP_MD.wav"></audio></td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Male</td>
-        <td><audio controls src="audio/1014_IEO_ANG_MD.wav"></audio></td>
-        <td><audio controls src="audio/1040_TIE_SAD_XX.wav"></audio></td>
-        <td><audio controls src="audio/1059_IEO_HAP_MD.wav"></audio></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Female</td>
-        <td><audio controls src="audio/1012_TIE_ANG_XX.wav"></audio></td>
-        <td><audio controls src="audio/1020_TAI_SAD_XX.wav"></audio></td>
-        <td><audio controls src="audio/1079_ITS_HAP_XX.wav"></audio></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Male</td>
-        <td><audio controls src="audio/1027_WSI_DIS_XX.wav"></audio></td>
-        <td><audio controls src="audio/1069_TIE_SAD_XX.wav"></audio></td>
-        <td><audio controls src="audio/1038_ITS_FEA_XX.wav"></audio></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Female</td>
-        <td><audio controls src="audio/1055_WSI_ANG_XX.wav"></audio></td>
-        <td><audio controls src="audio/1006_IEO_SAD_MD.wav"></audio></td>
-        <td><audio controls src="audio/1063_IWL_HAP_XX.wav"></audio></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Male</td>
-        <td><audio controls src="audio/1017_WSI_DIS_XX.wav"></audio></td>
-        <td><audio controls src="audio/1045_MTI_SAD_XX.wav"></audio></td>
-        <td><audio controls src="audio/1045_IWW_HAP_XX.wav"></audio></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <!-- 第二部分說明 -->
-  <h3>3. Speaker Age Group Annotation</h3>
-  <p>This demo provides example audio clips to help annotators understand the speaker age group labeling task. Each audio sample corresponds to one of the following age groups: Child (4–12 years old), Teenager (13–19 years old), Adult (20–64 years old), or Elderly (65+ years old). Please listen carefully to each clip and select the single age group that best matches your perception of the speaker’s voice.</p>
-
-  <!-- 第二部分表格 -->
-  <table>
-    <thead>
-      <tr>
-        <th>Index</th>
-        <th>Child</th>
-        <th>Teenager</th>
-        <th>Adult</th>
-        <th>Elderly</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td><audio controls src="audio/T0003G0036S0001.wav"></audio></td>
-        <td><audio controls src="audio/1077_IEO_HAP_LO.wav"></audio></td>
-        <td><audio controls src="audio/1035_IEO_NEU_XX.wav"></audio></td>
-        <td><audio controls src="audio/1034_IEO_NEU_XX.wav"></audio></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td><audio controls src="audio/T0008G0190S0012.wav"></audio></td>
-        <td><audio controls src="audio/1077_DFA_HAP_XX.wav"></audio></td>
-        <td><audio controls src="audio/1035_TIE_NEU_XX.wav"></audio></td>
-        <td><audio controls src="audio/1034_IOM_SAD_XX.wav"></audio></td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td><audio controls src="audio/T0003G9082S0001.wav"></audio></td>
-        <td><audio controls src="audio/1077_IEO_FEA_MD.wav"></audio></td>
-        <td><audio controls src="audio/1035_ITH_NEU_XX.wav"></audio></td>
-        <td><audio controls src="audio/1034_ITH_SAD_XX.wav"></audio></td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td><audio controls src="audio/T0008G0287S0006.wav"></audio></td>
-        <td><audio controls src="audio/1077_DFA_NEU_XX.wav"></audio></td>
-        <td></td>
-        <td><audio controls src="audio/1034_TIE_SAD_XX.wav"></audio></td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td><audio controls src="audio/T0003G4011S0001.wav"></audio></td>
-        <td><audio controls src="audio/1035_IOM_SAD_XX.wav"></audio></td>
-        <td></td>
-        <td><audio controls src="audio/1034_DFA_NEU_XX.wav"></audio></td>
-      </tr>
-    </tbody>
-  </table>
 </body>
 </html>

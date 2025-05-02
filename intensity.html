@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emotion Intensity Rating</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 40px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    audio {
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Emotion Intensity Rating</h2>
+  <p>You are asked to listen to each audio clip and rate how strongly a specific emotion (e.g., Happy, Angry, Sad, or Surprised) is expressed in the speaker’s voice. Ratings are made on a 5-point scale, from 1 (very low intensity) to 5 (very high intensity).</p>
+  <p>The table below organizes sample clips by emotion category, speaker gender, and intensity level.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Intensity Level</th>
+        <th>Gender</th>
+        <th>Angry</th>
+        <th>Sad</th>
+        <th>Happy</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>5</td><td>Female</td><td><audio controls src="audio/1052_IEO_ANG_HI.wav"></audio></td><td><audio controls src="audio/1028_WSI_FEA_XX.wav"></audio></td><td><audio controls src="audio/1003_IWW_HAP_XX.wav"></audio></td></tr>
+      <tr><td>5</td><td>Male</td><td><audio controls src="audio/1059_TSI_ANG_XX.wav"></audio></td><td><audio controls src="audio/1067_IEO_DIS_HI.wav"></audio></td><td><audio controls src="audio/1064_TSI_HAP_XX.wav"></audio></td></tr>
+      <tr><td>4</td><td>Female</td><td><audio controls src="audio/1061_IWL_ANG_XX.wav"></audio></td><td><audio controls src="audio/1028_ITS_SAD_XX.wav"></audio></td><td><audio controls src="audio/1074_TAI_HAP_XX.wav"></audio></td></tr>
+      <tr><td>4</td><td>Male</td><td><audio controls src="audio/1027_IOM_ANG_XX.wav"></audio></td><td><audio controls src="audio/1039_MTI_SAD_XX.wav"></audio></td><td><audio controls src="audio/1064_TIE_HAP_XX.wav"></audio></td></tr>
+      <tr><td>3</td><td>Female</td><td><audio controls src="audio/1058_DFA_ANG_XX.wav"></audio></td><td><audio controls src="audio/1060_IOM_SAD_XX.wav"></audio></td><td><audio controls src="audio/1078_IEO_HAP_MD.wav"></audio></td></tr>
+      <tr><td>3</td><td>Male</td><td><audio controls src="audio/1014_IEO_ANG_MD.wav"></audio></td><td><audio controls src="audio/1040_TIE_SAD_XX.wav"></audio></td><td><audio controls src="audio/1059_IEO_HAP_MD.wav"></audio></td></tr>
+      <tr><td>2</td><td>Female</td><td><audio controls src="audio/1012_TIE_ANG_XX.wav"></audio></td><td><audio controls src="audio/1020_TAI_SAD_XX.wav"></audio></td><td><audio controls src="audio/1079_ITS_HAP_XX.wav"></audio></td></tr>
+      <tr><td>2</td><td>Male</td><td><audio controls src="audio/1027_WSI_DIS_XX.wav"></audio></td><td><audio controls src="audio/1069_TIE_SAD_XX.wav"></audio></td><td><audio controls src="audio/1038_ITS_FEA_XX.wav"></audio></td></tr>
+      <tr><td>1</td><td>Female</td><td><audio controls src="audio/1055_WSI_ANG_XX.wav"></audio></td><td><audio controls src="audio/1006_IEO_SAD_MD.wav"></audio></td><td><audio controls src="audio/1063_IWL_HAP_XX.wav"></audio></td></tr>
+      <tr><td>1</td><td>Male</td><td><audio controls src="audio/1017_WSI_DIS_XX.wav"></audio></td><td><audio controls src="audio/1045_MTI_SAD_XX.wav"></audio></td><td><audio controls src="audio/1045_IWW_HAP_XX.wav"></audio></td></tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
