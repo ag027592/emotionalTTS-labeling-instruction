@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emotion Intensity Annotation Training</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    audio {
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Emotion Intensity Annotation Training</h1>
+
+  <!-- 說明 -->
+  <p>
+    Annotators should listen to each audio clip and rate the emotional intensity from 1 (low) to 5 (high). The table below includes training samples grouped by gender and emotion intensity level.
+  </p>
+
+  <!-- 表格 -->
+  <table>
+    <thead>
+      <tr>
+        <th>Level</th>
+        <th>Gender</th>
+        <th>Angry</th>
+        <th>Sad</th>
+        <th>Happy</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- Example: Level 5 - Female -->
+      <tr>
+        <td>5 (75–95)</td>
+        <td>Female</td>
+        <td><audio controls src="audio/1052_IEO_ANG_HI.wav"></audio></td>
+        <td><audio controls src="audio/1028_WSI_FEA_XX.wav"></audio></td>
+        <td><audio controls src="audio/1003_IWW_HAP_XX.wav"></audio></td>
+      </tr>
+
+      <!-- Level 5 - Male -->
+      <tr>
+        <td>5 (75–95)</td>
+        <td>Male</td>
+        <td><audio controls src="audio/1059_TSI_ANG_XX.wav"></audio></td>
+        <td><audio controls src="audio/1067_IEO_DIS_HI.wav"></audio></td>
+        <td><audio controls src="audio/1064_TSI_HAP_XX.wav"></audio></td>
+      </tr>
+
+      <!-- 其餘層級以此類推...（你可自行複製貼上） -->
+
+    </tbody>
+  </table>
+</body>
+</html>
