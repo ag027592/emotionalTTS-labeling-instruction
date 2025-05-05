@@ -7,20 +7,19 @@
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
-      max-width: 1200px;
-      margin: auto;
+      line-height: 1.6;
     }
-    h1 {
+    h1, h2, h3 {
       text-align: center;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 30px;
+      margin-top: 40px;
     }
     th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
+      border: 1px solid #ddd;
+      padding: 8px;
       text-align: center;
       vertical-align: middle;
     }
@@ -28,7 +27,10 @@
       background-color: #f2f2f2;
     }
     audio {
-      width: 180px;
+      width: 150px;
+    }
+    ul {
+      margin-top: 0;
     }
     .emphasis {
       font-weight: bold;
@@ -38,68 +40,89 @@
 </head>
 <body>
 
-<h1>Perceived Word Emphasis – Demo Samples</h1>
+  <h2>Evaluation Task: Perceived Word Emphasis</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Emphasis</th>
-      <th>Transcription</th>
-      <th>Audio</th>
-      <th>Emotion</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="emphasis">prohibitive</td>
-      <td>This becomes <span class="emphasis">prohibitive</span> for realistically large values of "n".</td>
-      <td><audio controls src="audio/recorded_audio_447LbNm.webm"></audio></td>
-      <td>Happy</td>
-    </tr>
-    <tr>
-      <td class="emphasis">Seattle</td>
-      <td>After graduate school Ahn moved to <span class="emphasis">Seattle</span> and worked as a psychotherapist.</td>
-      <td><audio controls src="audio/recorded_audio_qlFLh26.webm"></audio></td>
-      <td>Happy</td>
-    </tr>
-    <tr>
-      <td class="emphasis">reception</td>
-      <td>What a <span class="emphasis">reception</span> they got.</td>
-      <td><audio controls src="audio/recorded_audio_BcsAZgw.webm"></audio></td>
-      <td>Angry</td>
-    </tr>
-    <tr>
-      <td class="emphasis">defeated</td>
-      <td>He was narrowly <span class="emphasis">defeated</span> by Dahir Riyale Kahin.</td>
-      <td><audio controls src="audio/recorded_audio_ckkGJ8v.webm"></audio></td>
-      <td>Angry</td>
-    </tr>
-    <tr>
-      <td class="emphasis">resigned</td>
-      <td>McMahon <span class="emphasis">resigned</span> soon afterward.</td>
-      <td><audio controls src="audio/recorded_audio_wdm2Rvd.webm"></audio></td>
-      <td>Sad</td>
-    </tr>
-    <tr>
-      <td class="emphasis">typical</td>
-      <td>The house is a <span class="emphasis">typical</span> three-bedroom family home.</td>
-      <td><audio controls src="audio/recorded_audio_DTKHnUN.webm"></audio></td>
-      <td>Sad</td>
-    </tr>
-    <tr>
-      <td class="emphasis">swiftly</td>
-      <td>And then things happened very <span class="emphasis">swiftly</span>.</td>
-      <td><audio controls src="audio/recorded_audio_O0kWKhg.webm"></audio></td>
-      <td>Surprised</td>
-    </tr>
-    <tr>
-      <td class="emphasis">both</td>
-      <td>In this way, it may be possible to find <span class="emphasis">both</span> openings.</td>
-      <td><audio controls src="audio/recorded_audio_D943nCS.webm"></audio></td>
-      <td>Surprised</td>
-    </tr>
-  </tbody>
-</table>
+  <p>Please listen very carefully to the generated audio sample. You will be provided with the sentence that the audio is supposed to be speaking. Your task is to identify any word in that sentence that the speaker seems to put particular emphasis on when speaking.</p>
+
+  <h3>What to Listen For:</h3>
+  <ul>
+    <li>Words spoken louder than the others</li>
+    <li>Words with noticeably higher or lower pitch</li>
+    <li>Words spoken slower or faster</li>
+    <li>Words delivered with different tone or inflection</li>
+  </ul>
+
+  <p>Compare each word to others in the sentence. Which word stands out in terms of delivery?</p>
+
+  <h3>Instructions:</h3>
+  <ul>
+    <li>Read the provided sentence.</li>
+    <li>Listen to the corresponding generated audio sample attentively.</li>
+    <li>Identify the word that sounds emphasized.</li>
+    <li>Select that word as your response.</li>
+    <li>If you do not perceive any emphasis (the sentence sounds flat or even), select “No word emphasized.”</li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Emphasis</th>
+        <th>Transcription</th>
+        <th>Audio</th>
+        <th>Emotion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="emphasis">prohibitive</td>
+        <td>This becomes <span class="emphasis">prohibitive</span> for realistically large values of "n".</td>
+        <td><audio controls src="audio/recorded_audio_447LbNm.webm"></audio></td>
+        <td>Happy</td>
+      </tr>
+      <tr>
+        <td class="emphasis">Seattle</td>
+        <td>After graduate school Ahn moved to <span class="emphasis">Seattle</span> and worked as a psychotherapist.</td>
+        <td><audio controls src="audio/recorded_audio_qlFLh26.webm"></audio></td>
+        <td>Happy</td>
+      </tr>
+      <tr>
+        <td class="emphasis">reception</td>
+        <td>What a <span class="emphasis">reception</span> they got.</td>
+        <td><audio controls src="audio/recorded_audio_BcsAZgw.webm"></audio></td>
+        <td>Angry</td>
+      </tr>
+      <tr>
+        <td class="emphasis">defeated</td>
+        <td>He was narrowly <span class="emphasis">defeated</span> by Dahir Riyale Kahin.</td>
+        <td><audio controls src="audio/recorded_audio_ckkGJ8v.webm"></audio></td>
+        <td>Angry</td>
+      </tr>
+      <tr>
+        <td class="emphasis">resigned</td>
+        <td>McMahon <span class="emphasis">resigned</span> soon afterward.</td>
+        <td><audio controls src="audio/recorded_audio_wdm2Rvd.webm"></audio></td>
+        <td>Sad</td>
+      </tr>
+      <tr>
+        <td class="emphasis">typical</td>
+        <td>The house is a <span class="emphasis">typical</span> three-bedroom family home.</td>
+        <td><audio controls src="audio/recorded_audio_DTKHnUN.webm"></audio></td>
+        <td>Sad</td>
+      </tr>
+      <tr>
+        <td class="emphasis">swiftly</td>
+        <td>And then things happened very <span class="emphasis">swiftly</span>.</td>
+        <td><audio controls src="audio/recorded_audio_O0kWKhg.webm"></audio></td>
+        <td>Surprised</td>
+      </tr>
+      <tr>
+        <td class="emphasis">both</td>
+        <td>In this way, it may be possible to find <span class="emphasis">both</span> openings.</td>
+        <td><audio controls src="audio/recorded_audio_D943nCS.webm"></audio></td>
+        <td>Surprised</td>
+      </tr>
+    </tbody>
+  </table>
 
 </body>
 </html>
