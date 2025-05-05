@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Perceived Word Emphasis Annotation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      vertical-align: top;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+    audio {
+      width: 200px;
+    }
+    .instruction {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-left: 4px solid #007BFF;
+      margin-bottom: 30px;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Perceived Word Emphasis</h1>
+
+  <div class="instruction">
+    <h2>Evaluation Task: Perceived Word Emphasis</h2>
+    <p>Please listen very carefully to the generated audio sample. You will be provided with the sentence that the audio is supposed to be speaking. Your task is to identify any word in that sentence that the speaker seems to put particular <span class="highlight">emphasis</span> on when speaking.</p>
+
+    <p><strong>What to listen for (Emphasis):</strong></p>
+    <ul>
+      <li>Spoken louder</li>
+      <li>At a higher or lower pitch than the surrounding words</li>
+      <li>Spoken slightly slower or faster</li>
+      <li>Delivered with a different tone or inflection</li>
+    </ul>
+
+    <p>Compare each word to the others in the sentence in the generated speech. Which words sound like the speaker is highlighting them?</p>
+
+    <p><strong>Instructions:</strong></p>
+    <ol>
+      <li>Read the provided sentence.</li>
+      <li>Listen to the corresponding generated audio sample with great attention.</li>
+      <li>Identify the word in the sentence that you perceive as being emphasized by the speaker in the audio.</li>
+      <li>Select the word you believe is emphasized.</li>
+      <li>If you do not perceive any particular word being emphasized (i.e., the sentence is spoken relatively flatly or with even stress), please indicate that no words are emphasized.</li>
+    </ol>
+
+    <p>You may find that <strong>one word or no words</strong> are emphasized in a given sample. Please be precise when selecting the exact word from the sentence.</p>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Audio</th>
+        <th>Sentence</th>
+        <th>Select Emphasized Word</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><audio controls src="audio/sample1.wav"></audio></td>
+        <td>This becomes prohibitive for realistically large values of <strong>n</strong>.</td>
+        <td>
+          <select>
+            <option value="">-- Select Word --</option>
+            <option>This</option>
+            <option>becomes</option>
+            <option>prohibitive</option>
+            <option>for</option>
+            <option>realistically</option>
+            <option>large</option>
+            <option>values</option>
+            <option>of</option>
+            <option>n</option>
+            <option>None (No Emphasis)</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><audio controls src="audio/sample2.wav"></audio></td>
+        <td>We could easily forget how important this moment is.</td>
+        <td>
+          <select>
+            <option value="">-- Select Word --</option>
+            <option>We</option>
+            <option>could</option>
+            <option>easily</option>
+            <option>forget</option>
+            <option>how</option>
+            <option>important</option>
+            <option>this</option>
+            <option>moment</option>
+            <option>is</option>
+            <option>None (No Emphasis)</option>
+          </select>
+        </td>
+      </tr>
+
+      <!-- Add more rows as needed -->
+
+    </tbody>
+  </table>
+
+</body>
+</html>
